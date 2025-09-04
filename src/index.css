@@ -2,41 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Healthcare IoT System Design System - Medical Blue Theme with Trust & Reliability */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors */
+    --background: 210 40% 98%;
+    --foreground: 215 25% 27%;
 
+    /* Card components */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 27%;
 
+    /* Popover components */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Medical Blue Primary - Trust & Reliability */
+    --primary: 200 95% 45%;
+    --primary-light: 200 95% 55%;
+    --primary-dark: 200 95% 35%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Soft Medical Teal */
+    --secondary: 180 25% 94%;
+    --secondary-foreground: 180 35% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted backgrounds */
+    --muted: 210 30% 96%;
+    --muted-foreground: 215 15% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Medical Green for Success */
+    --accent: 140 50% 92%;
+    --accent-foreground: 140 60% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Alert colors */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Success/Low Risk - Calming Green */
+    --success: 140 60% 45%;
+    --success-light: 140 60% 92%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Warning/Medium Risk - Professional Orange */
+    --warning: 35 85% 55%;
+    --warning-light: 35 85% 95%;
+    --warning-foreground: 0 0% 100%;
+    
+    /* High Risk - Medical Red */
+    --high-risk: 0 75% 55%;
+    --high-risk-light: 0 75% 95%;
+    --high-risk-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Form elements */
+    --border: 200 20% 90%;
+    --input: 0 0% 100%;
+    --input-border: 200 20% 80%;
+    --ring: 200 95% 45%;
 
-    --radius: 0.5rem;
+    /* Gradients for modern medical UI */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(140 60% 55%));
+    --gradient-warning: linear-gradient(135deg, hsl(var(--warning)), hsl(35 85% 65%));
+    --gradient-danger: linear-gradient(135deg, hsl(var(--high-risk)), hsl(0 75% 65%));
+    --gradient-bg: linear-gradient(135deg, hsl(var(--background)), hsl(200 40% 95%));
+    
+    /* Shadows for depth */
+    --shadow-medical: 0 4px 20px -2px hsl(var(--primary) / 0.1);
+    --shadow-card: 0 2px 10px -2px hsl(215 25% 27% / 0.1);
+    --shadow-elevated: 0 8px 30px -4px hsl(var(--primary) / 0.15);
+    
+    /* Animations */
+    --transition-medical: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --bounce-gentle: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
